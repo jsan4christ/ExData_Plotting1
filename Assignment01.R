@@ -33,7 +33,7 @@ d3$DateTime <- strptime(paste(d3$Date, d3$Time), "%Y-%m-%d %H:%M:%S")
 #subset for plotting
 d31 <- subset(d3, select = c("DateTime","Sub_metering_1"))
 d31$sm <- 1
-names(d31)[3] <- "sm"
+names(d31)[2] <- "Sub_metering"
 d32 <- subset(d3, select = c("DateTime","Sub_metering_2"))
 d32$sm <- 2
 names(d32)[2] <- "Sub_metering"
